@@ -1,7 +1,7 @@
 # Product Requirements Document — Roameo
 
 **Project:** Roameo Website (MVP)
-**Version:** 2.0
+**Version:** 2.1
 **Date:** 2026-04-26
 **Status:** Draft
 
@@ -221,6 +221,9 @@ Each destination has a dedicated page containing:
 - OAuth login (Google as minimum)
 - External link management for TripAdvisor, Google, Yelp, OpenTable, Resy, hotel partners
 - Currency exchange rate API (refreshed daily)
+- Visa and vaccination data manually curated and refreshed quarterly; each entry displays last-updated date
+- Self-serve advertiser portal: businesses create an account, upload creative, select destination and category, set budget, and manage their own boosted listings
+- Booking links (OpenTable, Resy, hotels, experiences) built as configurable partner link slots — populated with placeholder URLs at MVP, swapped for live affiliate links when partnerships are established
 - GDPR compliance required given European launch and user data collection
 - No content moderation pipeline needed for MVP
 
@@ -250,10 +253,12 @@ Each destination has a dedicated page containing:
 
 ---
 
-## 15. Open Questions
+## 15. Resolved Decisions
 
-- What is the source and refresh cadence for visa/vaccination data — government APIs or manual curation?
-- How are boosted listing advertisers onboarded for MVP — self-serve portal or direct sales?
-- Which European destinations are included at launch — curated shortlist or open to any European city?
-- What affiliate partnerships need to be established before launch (OpenTable, Resy, hotel platforms)?
-- Is there a minimum post threshold before a destination page goes live?
+| Question | Decision |
+|---|---|
+| Visa/vaccination data source and refresh | Manually curated, refreshed quarterly |
+| Advertiser onboarding | Self-serve portal — businesses sign up and manage boosted listings independently |
+| Launch destinations | London, Paris, Lucerne, Vienna, Istanbul + all Top 20 most visited cities in Europe |
+| Affiliate partnerships at launch | No live partnerships at MVP — platform built to accommodate OpenTable, Resy, and hotel booking integrations when partnerships are established |
+| Minimum posts to activate a destination page | None — destination pages go live immediately upon creation |
